@@ -78,7 +78,10 @@ html[data-theme="dark"] {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(210px, 250px) minmax(0, 1fr) minmax(230px, 290px);
+  grid-template-columns: minmax(210px, 220px) minmax(0, 1fr) minmax(
+      230px,
+      240px
+    );
   gap: clamp(16px, 2vw, 24px);
   align-items: start;
 }
@@ -116,7 +119,7 @@ html[data-theme="dark"] {
 
 .card,
 .painel-professor-central {
-  padding: clamp(18px, 2vw, 26px);
+  padding: clamp(18px, 2vw, 20px);
 }
 
 .card:hover,
@@ -216,10 +219,7 @@ aside button,
   box-shadow: 0 12px 22px rgba(124, 58, 237, 0.2);
   cursor: pointer;
   font-weight: 900;
-  transition:
-    transform 160ms ease,
-    box-shadow 160ms ease,
-    filter 160ms ease,
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease,
     background 160ms ease;
 }
 
@@ -524,9 +524,7 @@ aside button:hover,
   color: var(--text-primary);
   padding: 12px 14px;
   outline: none;
-  transition:
-    border-color 160ms ease,
-    box-shadow 160ms ease;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .login-card input:focus,
